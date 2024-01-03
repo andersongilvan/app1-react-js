@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: italic;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header
+{
+  width: 100%;
+background-color: #20232A;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header p 
+{
+  color: #61DAFB;
+  padding: 15px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+.box-titulo
+{
+  width: 100%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  gap: 20px;
+  background-color: #282C34;
 }
-
-.App-link {
-  color: #61dafb;
+.box-titulo h1 
+{
+  
+  font-style: italic;
+  font-weight: bold;
+  color: #282C34;
+  font-size: 40px;
+  border: 1px solid black;
+  background-color: #61DAFB;
+  padding: 15px 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-titulo p
+{
+  font-style: italic;
+  font-weight: 600;
+  font-size: 40px;
+  color: aliceblue;
+}
+.box-titulo a
+{
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-style: italic;
+  background-color: #61DAFB;
+  padding: 15px 20px;
+}
+.box-titulo a:hover
+{
+  background-color: aliceblue;
+  color: #282C34;
+}
+.box-requisitos
+{
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aliceblue;
+}
+.box-requisitos h2
+{
+  font-size: 30px;
+  color: #282C34;
+}
+.box-requisitos p
+{
+  font-size: 20px;
+  color: #282C34;
+  font-weight: 500;
+}
+.box-cards
+{
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card
+{
+  width: 300px;
+  height: 100px;
+  border: 1px solid #282C34;
+  background-color: #282C34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 4px 4px 4px 4px #282C34;
+}
+.card h3{
+  font-weight: 500;
+  font-size: 20px;
+  color: #AC8E45;
+  
+}
+.card p
+{
+  font-weight: 400;
+  color: aliceblue;
+}
+footer
+{
+  text-align: center;
+  padding: 10px;
 }
